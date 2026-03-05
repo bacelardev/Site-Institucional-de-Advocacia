@@ -1,0 +1,51 @@
+/* style.css */
+
+/* Estilos de Padding de Seção */
+.section-padding {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+@media (min-width: 768px) {
+    .section-padding {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section-padding {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+/* Efeito de Vidro na Navbar */
+.glass-nav {
+    background-color: rgba(249, 247, 242, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26, 26, 26, 0.05);
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Classes de Revelação (Animações de Scroll) */
+.reveal, .reveal-left, .reveal-right, .reveal-up {
+    transition: all 1s cubic-bezier(0.17, 0.55, 0.55, 1);
+}
+
+.reveal-visible {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+}
+
+/* Indicador de Scroll Animado */
+@keyframes scroll-line {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(200%); }
+}
+
+.animate-scroll-line {
+    animation: scroll-line 2s linear infinite;
+}

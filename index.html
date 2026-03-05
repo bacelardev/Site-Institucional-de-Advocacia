@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oliveira Advocacia | Excelência Jurídica</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração do Tema Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#C5A059',
+                            dark: '#1A1A1A',
+                            cream: '#F9F7F2',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Estilos Customizados -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-brand-cream text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-brand-dark">
+    
+    <!-- Navbar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-500 py-6">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
+            <a href="#home" class="flex items-center gap-2 group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-brand-gold transition-transform group-hover:scale-110"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>
+                <span class="font-serif text-2xl tracking-tight font-semibold">
+                    Oliveira <span class="text-brand-gold">Advocacia</span>
+                </span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#home" class="text-sm uppercase tracking-widest font-medium hover:text-brand-gold transition-colors">Início</a>
+                <a href="#about" class="text-sm uppercase tracking-widest font-medium hover:text-brand-gold transition-colors">Sobre</a>
+                <a href="#practice" class="text-sm uppercase tracking-widest font-medium hover:text-brand-gold transition-colors">Áreas</a>
+                <a href="#contact" class="text-sm uppercase tracking-widest font-medium hover:text-brand-gold transition-colors">Contato</a>
+                <a href="#contact" class="bg-brand-dark text-brand-cream px-6 py-2 rounded-full text-sm uppercase tracking-widest font-medium hover:bg-brand-gold hover:text-brand-dark transition-all duration-300">
+                    Agendar Consulta
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-brand-dark focus:outline-none">
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+                <svg id="close-icon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-brand-cream border-b border-brand-dark/10 p-6 flex flex-col gap-4 md:hidden shadow-xl">
+            <a href="#home" class="mobile-link text-lg font-serif py-2 border-b border-brand-dark/5">Início</a>
+            <a href="#about" class="mobile-link text-lg font-serif py-2 border-b border-brand-dark/5">Sobre</a>
+            <a href="#practice" class="mobile-link text-lg font-serif py-2 border-b border-brand-dark/5">Áreas de Atuação</a>
+            <a href="#contact" class="mobile-link text-lg font-serif py-2">Contato</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="relative h-screen flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop" alt="Escritório" class="w-full h-full object-cover opacity-20 grayscale">
+                <div class="absolute inset-0 bg-gradient-to-b from-brand-cream/50 via-transparent to-brand-cream"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
+                <div class="reveal max-w-3xl opacity-0 translate-y-8 transition-all duration-1000">
+                    <span class="inline-block text-brand-gold uppercase tracking-[0.3em] text-xs font-bold mb-4">Excelência & Tradição Jurídica</span>
+                    <h1 class="text-6xl md:text-8xl font-serif leading-[0.9] mb-8">Compromisso com a <br><span class="italic">Justiça</span> e seus Direitos.</h1>
+                    <p class="text-lg md:text-xl text-brand-dark/70 mb-10 max-w-xl leading-relaxed">Oferecemos soluções jurídicas personalizadas com ética, transparência e o rigor técnico que o seu caso exige.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-brand-dark text-brand-cream px-10 py-4 rounded-full text-sm uppercase tracking-widest font-bold hover:bg-brand-gold hover:text-brand-dark transition-all duration-300 text-center">Falar com um Especialista</a>
+                        <a href="#practice" class="border border-brand-dark/20 px-10 py-4 rounded-full text-sm uppercase tracking-widest font-bold hover:bg-brand-dark hover:text-brand-cream transition-all duration-300 text-center">Nossas Áreas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section id="about" class="section-padding bg-white overflow-hidden">
+            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal-left opacity-0 -translate-x-12 transition-all duration-1000">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop" alt="Advogado" class="rounded-2xl shadow-2xl relative z-10">
+                        <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-brand-gold/10 rounded-2xl -z-0"></div>
+                    </div>
+                </div>
+                <div class="reveal-right opacity-0 translate-x-12 transition-all duration-1000">
+                    <span class="text-brand-gold uppercase tracking-widest text-xs font-bold mb-4 block">Sobre o Escritório</span>
+                    <h2 class="text-4xl md:text-5xl mb-8">Tradição que evolui com o <span class="italic">tempo</span>.</h2>
+                    <p class="text-brand-dark/70 mb-6 leading-relaxed">Fundado com o propósito de aprimorar o atendimento jurídico, Oliveira Advocacia combina décadas de experiência com uma visão moderna do direito.</p>
+                    <div class="grid grid-cols-2 gap-8 mt-8">
+                        <div><h4 class="text-3xl font-serif text-brand-gold mb-1">15+</h4><p class="text-xs uppercase tracking-widest font-bold opacity-60">Anos de Experiência</p></div>
+                        <div><h4 class="text-3xl font-serif text-brand-gold mb-1">2k+</h4><p class="text-xs uppercase tracking-widest font-bold opacity-60">Causas Vencidas</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas -->
+<section id="practice" class="section-padding">
+    <div class="max-w-7xl mx-auto">
+
+        <div class="reveal text-center max-w-2xl mx-auto mb-20 opacity-0 translate-y-8 transition-all duration-1000">
+            <span class="text-brand-gold uppercase tracking-widest text-xs font-bold mb-4 block">Especialidades</span>
+            <h2 class="text-4xl md:text-5xl mb-6">Nossas Áreas de Atuação</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="reveal-up opacity-0 translate-y-12 transition-all duration-700 bg-white p-10 rounded-2xl border border-brand-dark/5 hover:border-brand-gold/30 hover:shadow-xl group">
+                
+                <div class="w-14 h-14 bg-brand-cream rounded-xl flex items-center justify-center text-brand-gold mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                    </svg>
+                </div>
+
+                <h3 class="text-2xl mb-4">Direito Civil</h3>
+                <p class="text-brand-dark/60 text-sm leading-relaxed">
+                    Resolução de conflitos, contratos e responsabilidade civil.
+                </p>
+
+            </div>
+            <!-- Card 2 -->
+            <div class="reveal-up opacity-0 translate-y-12 transition-all duration-700 bg-white p-10 rounded-2xl border border-brand-dark/5 hover:border-brand-gold/30 hover:shadow-xl group">
+                
+                <div class="w-14 h-14 bg-brand-cream rounded-xl flex items-center justify-center text-brand-gold mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                    </svg>
+                </div>
+
+                <h3 class="text-2xl mb-4">Direito Trabalhista</h3>
+                <p class="text-brand-dark/60 text-sm leading-relaxed">
+                    Defesa dos direitos do trabalhador e consultoria preventiva para empresas.
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="reveal-up opacity-0 translate-y-12 transition-all duration-700 bg-white p-10 rounded-2xl border border-brand-dark/5 hover:border-brand-gold/30 hover:shadow-xl group">
+                
+                <div class="w-14 h-14 bg-brand-cream rounded-xl flex items-center justify-center text-brand-gold mb-6 group-hover:bg-brand-gold group-hover:text-white transition-colors duration-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                    </svg>
+                </div>
+
+                <h3 class="text-2xl mb-4">Direito Penal</h3>
+                <p class="text-brand-dark/60 text-sm leading-relaxed">
+                    Defesa criminal técnica e rigorosa, assegurando o devido processo legal.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+        <!-- Contato -->
+        <section id="contact" class="section-padding bg-brand-dark text-brand-cream">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-20">
+                    <div class="reveal-left opacity-0 -translate-x-12 transition-all duration-1000">
+                        <span class="text-brand-gold uppercase tracking-widest text-xs font-bold mb-4 block">Contato</span>
+                        <h2 class="text-4xl md:text-5xl mb-8">Vamos conversar sobre o seu <span class="italic text-brand-gold">caso</span>.</h2>
+                        <div class="space-y-8 mt-12">
+                            <div class="flex items-start gap-6">
+                                <div class="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center text-brand-gold shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div><p class="text-xs uppercase tracking-widest font-bold opacity-40 mb-1">Telefone</p><p class="text-lg">+55 (77) 98888-8888</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reveal-right opacity-0 translate-x-12 transition-all duration-1000 bg-white/5 p-8 md:p-12 rounded-3xl border border-white/10">
+                        <form class="space-y-6" id="contact-form">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <input type="text" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-brand-gold" placeholder="Nome">
+                                <input type="email" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-brand-gold" placeholder="E-mail">
+                            </div>
+                            <textarea rows="4" required class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 outline-none focus:border-brand-gold" placeholder="Mensagem"></textarea>
+                            <button type="submit" class="w-full bg-brand-gold text-brand-dark font-bold uppercase tracking-widest py-4 rounded-xl hover:bg-white transition-all">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 px-6 md:px-12 border-t border-brand-dark/5 bg-brand-cream text-center">
+        <p class="text-sm text-brand-dark/40">© <span id="year"></span> Oliveira Advocacia. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
