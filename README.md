@@ -2,7 +2,7 @@ O projeto foi construído utilizando HTML5, Tailwind CSS e JavaScript, aplicando
 
 # Funcionalidades implementadas
 
-**`✔️ Layout totalmente responsivo (mobile, tablet e desktop)`**
+**`✔️ Layout totalmente responsivo (mobile, tablet e desktop)`**  
 **`✔️ Sistema de navegação com menu mobile interativo`**
 **`✔️ Hero section com design moderno e overlay visual`**
 **`✔️ Cards interativos com efeitos de hover`**
