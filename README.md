@@ -1,6 +1,6 @@
 Desenvolvi uma landing page para escritório de advocacia utilizando HTML,Tailwind CSS e JavaScrip, com foco em design moderno, responsividade e interatividade.
 
-##💡 Funcionalidades
+##Funcionalidades
 
 **`✔️ Layout totalmente responsivo (mobile, tablet e desktop)`**  
 **`✔️ Sistema de navegação com menu mobile interativo`**  
