@@ -1,6 +1,6 @@
 O projeto foi construído utilizando HTML5, Tailwind CSS e JavaScript, aplicando técnicas modernas de desenvolvimento front-end e boas práticas de organização de código.
 
-# Funcionalidades implementadas
+## Funcionalidades implementadas
 
 **`✔️ Layout totalmente responsivo (mobile, tablet e desktop)`**  
 **`✔️ Sistema de navegação com menu mobile interativo`**  
