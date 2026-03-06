@@ -1,7 +1,6 @@
-O projeto foi construído utilizando HTML5, Tailwind CSS e JavaScript, aplicando técnicas modernas de desenvolvimento front-end e boas práticas de organização de código.
+Desenvolvi uma landing page para escritório de advocacia utilizando HTML,Tailwind CSS e JavaScrip, com foco em design moderno, responsividade e interatividade.
 
-## Funcionalidades implementadas
-
+##💡 Funcionalidades:
 **`✔️ Layout totalmente responsivo (mobile, tablet e desktop)`**  
 **`✔️ Sistema de navegação com menu mobile interativo`**  
 **`✔️ Hero section com design moderno e overlay visual`**  
@@ -9,7 +8,6 @@ O projeto foi construído utilizando HTML5, Tailwind CSS e JavaScript, aplicando
 **`✔️ Animações de entrada no scroll utilizando Intersection Observer`**  
 **`✔️ Navbar dinâmica com efeito visual ao rolar a página`**  
 **`✔️ Formulário de contato com feedback visual de envio`**  
-**`✔️ Tipografia elegante com Google Fonts`**  
 **`✔️ Sistema de cores customizado com Tailwind CSS`**  
 
 🎯 Conceitos aplicados
@@ -20,5 +18,10 @@ O projeto foi construído utilizando HTML5, Tailwind CSS e JavaScript, aplicando
 - Layout com Grid e Flexbox
 - Scroll animations
 - Componentização de interface
+
+
+Preview:
+https://bacelardev.github.io/Site-Institucional-de-Advocacia/
+
 
 Desenvolvido por Guilherme Bacelar
